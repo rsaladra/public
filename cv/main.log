@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.9)  17 AUG 2016 12:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.9)  17 AUG 2016 12:45
 entering extended mode
 **main.tex
 (main.tex
@@ -830,6 +830,9 @@ LaTeX Info: Redefining \nameref on input line 53.
 
 (main.out) (main.out)
 \@outlinefile=\write3
+\pagenumberwidth=\skip78
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 53.
 \makecvtitledetailsbox=\box46
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 56.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
@@ -864,13 +867,13 @@ File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
 \makecvtitlepicturebox=\box47
 
-<fot2014crop.jpg, id=4, 953.5625pt x 1196.47pt>
+<fot2014crop.jpg, id=45, 953.5625pt x 1196.47pt>
 File: fot2014crop.jpg Graphic file (type jpg)
  <use fot2014crop.jpg>
 Package pdftex.def Info: fot2014crop.jpg used on input line 56.
 (pdftex.def)             Requested size: 64.0pt x 80.2927pt.
-\makecvtitledetailswidth=\skip78
-\makecvtitlepicturewidth=\skip79
+\makecvtitledetailswidth=\skip79
+\makecvtitlepicturewidth=\skip80
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -883,9 +886,6 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 
 {C:/Users/Robert/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./fot2014c
 rop.jpg>]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 106.
-
 Underfull \hbox (badness 1484) in paragraph at lines 114--114
 []\T1/lmss/bx/n/10.95 Discover Your En-trepreneuri-al-ism\T1/lmss/m/n/10.95 (+2
 0) , \T1/lmss/m/sl/10.95 Coun-try Con-test\T1/lmss/m/n/10.95 (+20) , Beªchatów 
@@ -893,16 +893,31 @@ Coun-try,
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 120--120
-[]\T1/lmss/m/n/10.95 (+20) Signal and Im-age Pro-cess-ing,
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]\T1/lmss/m/n/10.95 (+20) Administration, con-fig-u-ra-tion,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]\T1/lmss/m/n/10.95 (+20) Multi-machine con-fig-u-ra-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\T1/lmss/m/n/10.95 (+20) man-age-ment (own tools),
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 118--118
+\T1/lmss/m/n/10.95 (+20) net-work con-fig-u-ra-tion (hosts,
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
 
 
 Package rerunfilecheck Warning: File `main.out' has changed.
@@ -910,20 +925,20 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  BDFB8A6476014AA746260906C52665DC;983.
+(rerunfilecheck)             Before: BDFB8A6476014AA746260906C52665DC;983
+(rerunfilecheck)             After:  B346F6A22CD72C3F78C29C27BAFEC03E;1219.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 18834 strings out of 493673
- 314216 string characters out of 3143958
- 396142 words of memory out of 3000000
- 21957 multiletter control sequences out of 15000+200000
- 75382 words of font info for 76 fonts, out of 3000000 for 9000
+ 18852 strings out of 493673
+ 314416 string characters out of 3143958
+ 397268 words of memory out of 3000000
+ 21968 multiletter control sequences out of 15000+200000
+ 75685 words of font info for 79 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 40i,13n,45p,10356b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,13n,45p,10356b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
@@ -934,9 +949,9 @@ type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 /lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (2 pages, 610288 bytes).
+Output written on main.pdf (2 pages, 617448 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 24070 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 24150 words of extra memory for PDF output out of 24883 (max. 10000000)
 
