@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -18,24 +18,24 @@
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 \usepackage[official]{eurosym}			% euro przez  \texteuro
-
+\usepackage[super]{nth}
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.84]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Robert}{Saladra}
-\title{M. Eng.}                               % optional, remove / comment the line if not wanted
-\address{Zagłoby 12}{97-400 Bełchatów}{Poland}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\title{DevOps Architect}                               % optional, remove / comment the line if not wanted
+%\address{Pruszcz Gdański}{Poland}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+48~660~330~904}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{r.saladra@gmail.com}                               % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\homepage{linkedin.com/in/robert-saladra}                         % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{fot2014crop}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[50pt][0.1pt]{./r_edit.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 \quote{\textbf{Labores pariunt honores} - \emph{Effort brings honours}}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -55,74 +55,89 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Education}
-\cventry{2014--2015}{Master of Engineering Summa Cum Laude in Medical Physics}{AGH University of Science and Technology}{Kraków}{Profile: \textit{Imaging Techniques and Biometry}}{ }
-\cventry{2010--2014}{Bachelor of Engineering in Medical Physics}{AGH University of Science and Technology}{Kraków}{Thesis \textit{Radiochemical decontamination}}{}  % arguments 3 to 6 can be left empty
-%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-
-\section{Master thesis}
-\cvitem{Title}{\emph{
-Application of the continuous wavelet transform for quality improvement of the MR image. % By JSW
-%Appications of wavelet transform in magnetic resonsnce images quality improvement.% By me
-}}
-\cvitem{Supervisors}{J. Świebocka-Więk Ph.D., Prof. H. Figiel Ph.D.}
-\cvitem{Description}{Thesis involves quantitative comparison of wavelet image processing with filtering as reference, including image fusion, SNR and contrast enhancement.}
-
 \section{Experience}
-\subsection{Vocational - IT}
-\cventry{2015-current}{QA Engineer}{Telco Business Unit, Comarch SA}{Kraków}{}{Release manager (build, configuration, test and delivery), Oracle DBA, Database patch implementation and delivery, GIT \& SVN administration, Cloud server administration (internal tool based on OpenStack), Process automation}
-\subsection{Vocational - Medical physics}
-\cventry{2013}{Medical physics intern}{Department of Radiology and Diagnostic Imaging, Specialized Hospital John Paul II}{Kraków}{}{MRI and CT procedures, quality assurance, image processing, cooperation during diagnosis.}
-\cventry{2012}{Medical laboratory intern}{Megamed}{Bełchatów}{}{Medical documentation and laboratory tests.%\newline{}%
-%Detailed achievements:%
-%\begin{itemize}%
-%\item Achievement 1;
-%\item Achievement 2, with sub-achievements:
-%  \begin{itemize}%
-%  \item Sub-achievement (a);
-%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-%    \begin{itemize}
-%    \item Sub-sub-achievement i;
-%    \item Sub-sub-achievement ii;
-%    \item Sub-sub-achievement iii;
-%    \end{itemize}
-%  \item Sub-achievement (c);
-%  \end{itemize}
-%\item Achievement 3.
-%\end{itemize}
-}
-\subsection{Courses}
-\cventry{2016}{Oracle Database Administration}{Comarch}{Kraków, Poland}{}{}
-\cventry{2015}{Scalable Machine Learning}{edX platform}{}{}{}
-\cventry{2015}{Data Analysis: Take it to the MAX()}{edX platform}{}{}{}
-\cventry{2015}{Introduction to Computer Science and Programming Using Python}{edX platform}{}{}{}
-\cventry{2014}{Imaging Course for Physicists}{Estro}{Porto, Portugal}{}{}
+%\subsection{Vocational - IT}
+\cventry{2017-current}{DevOps Engineer / Architect}{Intel Technology Poland sp. z o.o.}{Gdańsk}{}{
+\begin{itemize}
+	\item \textbf{Architecture and Design} - designing CI/CD pipelines and cloud infrastructure; exploring emerging technologies for potential value in current and future projects; auditing deployments with security best practices; proactively identifying flaws and pain points in existing CI/CD flow
+	\item \textbf{Mentoring} - conducting formal trainings to team members on both internal and external tools and architecture designs; discussing and consulting personal development plans to grow less experienced engineers; presenting new solutions and Proof of Concept results for teams across multiple Business Groups and geo locations
+	\item \textbf{CI and process automation} - implementing generic and custom-tailed flows in Jenkins, QuickBuild, GitLab-CI and GitHub Actions; consultant for several Business Groups on pipeline migrations and optimizations
+	\item \textbf{Security and SDL} - reviewing security advisories; hardening environments; adhering to SDL recommendations; participating in company-wide security advisory initiatives and Proof of Concepts; preparing automated execution and validation for code and binary scans in Security and Compliance areas
+	\item \textbf{Generic solutions} - co-developing company-wide Python library; daily work on generic scan jobs to fit many supported projects
+	\item \textbf{Infrastructure} - implementing and maintaining automated provisioning for Cloud environments; preparing node configuration as a code; migrating from bare-metal to virtual machines to containers
+\end{itemize}}
+\cventry{2015-2017}{Automation Engineer}{Comarch S. A.}{Kraków}{}{
+\begin{itemize}
+	\item \textbf{Process automation} - supporting product integration and deployment at all stages
+	\item \textbf{CI/CD} - supporting build and deploy pipelines for off-the-shelf and in-house tools
+	\item \textbf{SCM administration} - administering multiple SCM solutions (GitLab, self-hosted git, SVN, in-house tool), performing code migrations, implementing githooks
+	\item \textbf{Oracle DBA} - providing and applying patches, executing backup and recovery drills
+\end{itemize}}
+%\subsection{Vocational - Medical physics}
+%\cventry{2013}{Medical physics intern}{Department of Radiology and Diagnostic Imaging, Specialized Hospital John Paul II}{Kraków}{}{MRI and CT procedures, quality assurance, image processing, cooperation during diagnosis}
+%\cventry{2012}{Medical laboratory intern}{Megamed}{Bełchatów}{}{Medical documentation and laboratory tests}
 
-\subsection{Miscellaneous}
-\cventry{2010-2012}{Scout Camp Counselor and Co-organizer}{ZHP (Polish Scouting and Guiding Association)}{Voluntary}{}{Mainly finances and logistics, partially program organization.}
-\cventry{2009-2010}{Volunteer Club Coordinator}{Okaż Serce Dzieciom i Osobom Niepełnosprawnym (Show Your Heart for Children and People with Disabilities)}{Bełchatów}{}{Foundraising coordination, underage volunteer supervising.}
+\section{Technologies}
+\cvitem{\textbf{CI/CD}}{GitHub Actions, Jenkins, ArgoCD, QuickBuild}
+\cvitem{\textbf{X as a Code}}{Ansible, Terraform, Helm Charts, Dockerfiles, Jenkinsfiles, Saltstack}
+\cvitem{\textbf{Architecture}}{Kubernetes, Amazon Web Services, Oracle Cloud Infrastructure, vSphere}
+\cvitem{\textbf{SDL Tools}}{Coverity, Trivy, BDBA, SonarQube, Checkmarx, KlockWork}
+\cvitem{\textbf{Scripting}}{Python, Bash, Groovy}
+%\cvitem{\textbf{Infrastructure}}{Saltstack, Docker on Kubernetes, Ansible, VMware vCenter}
+%\cvitem{\textbf{Scripting}}{Co-developing company-wide Python library, daily work in groovy and bash}
+%\cvitem{\textbf{Linux}}{Configuring RedHat, Ubuntu and SLES: services, access management, crontab}
+%\cvitem{\textbf{SCM}}{Self-hosted git, GitLab, GitHub, migrations from SVN and Perforce to git}
+%\cvitem{\textbf{DB \newline Administration}}{Oracle 12 administrator, patching, audits, performance tweaks, backup and restore policies}
+%\cvdoubleitem{\textbf{Bash, python}}{Workflow automation, environment configuration, API usage}{\textbf{Linux}}{Service management, scripts update, Cron}
+%\cvdoubleitem{\textbf{GIT \& SVN}}{Hooks, merge automation, code migration, Gitlab administration}{\textbf{Oracle DB}}{Administration, configuration, backup \& restore, patch delivery}
+%\cvitem{\textbf{Other}}{Atlassian Tools (Bamboo, JIRA, Kanban/Sprint boards, Project management), \LaTeX, Medical Image Acquisition (CT, MRI) and Processing}
 
-\section{Languages}
-\cvitemwithcomment{Polish}{Native}{ }
-\cvitemwithcomment{English}{Advanced}{Both in speaking and writing}
-\cvitemwithcomment{Russian}{Communicative}{In speaking and reading}
+
+%\subsection{Miscellaneous}
+%\cventry{2010-2012}{Scout Camp Counselor and Co-organizer}{ZHP (Polish Scouting and Guiding Association)}{Voluntary}{}{Mainly finances and logistics, partially program organization}
+%\cventry{2009-2010}{Volunteer Club Coordinator}{Okaż Serce Dzieciom i Osobom Niepełnosprawnym (Show Your Heart for Children and People with Disabilities)}{Bełchatów}{}{Fundraising coordination, underage volunteer supervising}
+
+\section{Certificates}
+\cventry{2024}{Certified Kubernetes Administrator}{Linux Foundation}{}{}{Certificate ID: LF-xhxlearutf}
+\cventry{2024}{Certified Kubernetes Security Specialist}{Linux Foundation}{}{}{Certificate ID: LF-nd7ibiyc2v}
+\cventry{2018}{IT Automation with Saltstack}{NobleProg}{}{}{}
+\cventry{2016}{Oracle Database Administration}{Comarch}{}{}{}
+
+%\section{Courses}
+%\cventry{2018}{IT Automation with Saltstack}{NobleProg}{Gdańsk, Poland}{}{}
+%\cventry{2017}{Scrum - project management}{Comarch}{Kraków, Poland}{}{}
+%\cventry{2016}{Oracle Database Administration}{Comarch}{Kraków, Poland}{}{}
+%\cventry{2015}{Scalable Machine Learning}{edX}{}{}{}
+%\cventry{2015}{Data Analysis: Take it to the MAX()}{edX}{}{}{}
+%\cventry{2015}{Introduction to Computer Science and Programming Using Python}{edX}{}{}{}
+%\cventry{2014}{Imaging Course for Physicists}{Estro}{Porto, Portugal}{}{}
+
+%\section{Education}
+%\cventry{2014--2015}{Master of Engineering Summa Cum Laude in Medical Physics}{AGH University of Science and Technology}{Kraków}{Profile: \textit{Imaging Techniques and Biometrics}}{}
+%\cventry{2010--2014}{Bachelor of Engineering in Medical Physics}{AGH University of Science and Technology}{Kraków}{Thesis title: \textit{Radiochemical decontamination}}{}
+
+% \section{Master thesis}
+% \cvitem{Title}{\emph{Application of the continuous wavelet transform for quality improvement of the MR image.}}
+%\cvitem{Supervisors}{J. Świebocka-Więk Ph.D., Prof. H. Figiel Ph.D.}
+%\cvitem{Description}{Thesis involves quantitative comparison of wavelet image processing with filtering as reference, including image fusion, SNR and contrast enhancement}
+
+%\section{Languages}
+%\cvitemwithcomment{Polish}{Native}{}
+%\cvitemwithcomment{English}{Advanced}{}
+%\cvitemwithcomment{Russian}{Communicative}{}
 %\cvitemwithcomment{Language 3}{Skill level}{Comment}
 
-\section{Awards}
-\cventry{2013-2015}{Rector's Scholarship}{AGH University od Science and Technology}{Kraków}{for total 4 of 10 semesters}{}
-\cventry{2010-2015}{European Union Scholarship}{AGH University od Science and Technology}{Kraków}{for total 8 of 10 semesters}{}
-\cventry{2010}{Discover Your Entrepreneurialism}{Country Contest}{Bełchatów Country}{2\textsuperscript{nd}~prize with foundrising over \euro{1000} for charity}{}
+%\section{Awards}
+%\cventry{2013-2015}{Rector's Scholarship}{AGH University od Science and Technology}{Kraków}{for total 4 of 10 semesters}{}
+%\cventry{2010-2015}{European Union Scholarship}{AGH University od Science and Technology}{Kraków}{for total 8 of 10 semesters}{}
+%\cventry{2010}{Discover Your Entrepreneurialism}{Country Contest}{Bełchatów Country}{2\textsuperscript{nd}~prize with foundrising over \euro{1000} for charity}{}
 
-\section{Computer skills}
-\cvdoubleitem{\textbf{GIT \& SVN}}{Merging, conflict resolving, hook policy, automerge}{\textbf{Oracle DB}}{Administration, configuration, backup \& restore, patch delivery}
-\cvdoubleitem{\textbf{Scripting}}{Mainly Bash, additional tasks in Perl, Python, Ruby, shared configuration using JSON, basics of C, Java, Scala}{\textbf{Linux}}{Multi-machine configuration management (own tools), network configuration (hosts, iptables, tunneling), cron}
-\cvitem{\textbf{Other}}{Atlassian Tools (Bamboo, JIRA, Kanban boards), GNUplot, ImageJ (Fiji), \LaTeX, Medical Image Acquisition (CT, MRI) and Processing}
-
-\section{Interests}
-\cvitem{Hiking}{Recreational walks up to 30km, mainly suburban area}
-%\cvitem{Blood donor}{Participated in few happenings in Kraków and Bełchatów.}
-\cvitem{Archery}{Amateur level, member of Płaszowianka Archery Club (Kraków)}
-\cvitem{MR Imaging}{Diffusion sequences, image processing}
+% \section{Interests}
+% \cvitem{Winemaking and brewing}{Experimenting with different fruits and spices, including bananas, watermelons, plums, vermouth}
+% \cvitem{Hiking}{Recreational walks, mainly suburban area}
+% \cvitem{Blood donor}{Awarded with Bronze Red Cross Badge}
+%\cvitem{Archery}{Amateur level, member of Płaszowianka Archery Club (Kraków)}
+%\cvitem{MR Imaging}{Diffusion sequences, image processing}
 
 %\section{Extra 1}
 %\cvlistitem{Item 1}
@@ -135,6 +150,9 @@ Application of the continuous wavelet transform for quality improvement of the M
 %  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
 %  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
 %\end{cvcolumns}
+% \vspace{41px}
+% {\small I hereby authorize you to process my personal data included in my job application for the needs of the current and future recruitment processes (in accordance with the Personnel Protection Act of 29.08.1997 no 133 position 883)}
+% {\small Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w ofercie dla potrzeb procesu rekrutacji zgodnie z Ustawą o ochronie danych osobowych z dnia 29.08.1997r., Dz. U. Nr 101, poz. 926 ze zm.}
 
 %-------ONLY CV
 \end{document}
